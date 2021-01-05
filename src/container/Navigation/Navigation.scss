@@ -1,0 +1,30 @@
+.Nav-links{
+    grid-column: 1/-1;
+    grid-row: 1/2;
+    display: grid;
+    justify-content: end;
+    align-content: center;
+    padding: 50px;
+}
+
+.Nav-links ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.Nav-links li{
+    display: inline-block;
+    margin: 40px;
+}
+
+.Nav-links a{
+    text-decoration: none;
+    color: purple;
+    font-family: 'Redressed', cursive;
+    font-size: large;
+}
+
+.Nav-links a:hover {
+    color: orangered;
+}

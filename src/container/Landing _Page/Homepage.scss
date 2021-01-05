@@ -1,0 +1,20 @@
+.header{
+    grid-row: 2/ 3;
+    grid-column: 1/-1;
+
+    //positioning
+    display: grid;
+    grid-template-columns: repeat( auto-fit , minmax(500px , 1fr));
+}
+.headImage{
+    transform: scaleX(-1);
+    height: 500px;
+    grid-column: 2/3;
+    align-self: end;
+}
+.logo{
+    height: 300px;
+    grid-column:1/2;
+    align-self: center;
+    justify-self: center;
+}

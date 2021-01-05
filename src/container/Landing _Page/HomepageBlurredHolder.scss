@@ -1,0 +1,16 @@
+.HomepageBlurredHolder{
+    // background-color: rgba(227, 196, 235, 0.589);
+    background-color: #f1e8f7c5;
+    border-radius: 20px;
+    z-index: 10;
+
+    //positioning
+    grid-row: 2/3;
+    grid-column: 2/3;
+
+    //making this an grid conatiner
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: [nav-start]100px[nav-end] repeat(3 , min-content ) 100px [footer-end];
+    gap: 20px;
+}
