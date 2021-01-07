@@ -12,5 +12,6 @@
     display: grid;
     grid-template-columns: repeat(2,1fr);
     grid-template-rows: [nav-start]100px[nav-end] repeat(3 , min-content ) 100px [footer-end];
-    gap: 20px;
+    column-gap: 20px;
+    row-gap: 150px;
 }

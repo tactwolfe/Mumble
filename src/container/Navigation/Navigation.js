@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-import  './Navigation.scss';
+import  './Navigation.css';
 
 
 class Navigation extends Component {
@@ -9,13 +9,13 @@ class Navigation extends Component {
         return(
             <header className="Nav-links">
                 <nav>
-                    <ul>
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#home">About us</a></li>
-                        <li><a href="#home">Features</a></li>
-                        <li><a href="#home">Contact us</a></li>
-                        <li><a href="/">Login</a></li>
-                    </ul>  
+                    <ul className="Nav-links__ul">
+                        <li className="Nav-links__li"><a className="Nav-links__a" href="#home">Home</a></li>
+                        <li className="Nav-links__li"><a className="Nav-links__a" href="#home">About us</a></li>
+                        <li className="Nav-links__li"><a className="Nav-links__a" href="#home">Features</a></li>
+                        <li className="Nav-links__li"><a className="Nav-links__a" href="#home">Contact us</a></li>
+                        <li className="Nav-links__li"><a className="Nav-links__login" href="/">Login</a></li>
+                    </ul> 
                 </nav>
             </header>
         );

@@ -12,8 +12,6 @@ class Homepage extends Component {
                <div className="header" id="#home">
                     <img className='logo' src={logo} alt="logo"></img>
                     <img className='headImage' src={headerIllustration} alt="illustration"></img>
-                    {/* <div className='logo'></div>
-                    <div className='headImage'></div> */}
                </div>
             ) 
 

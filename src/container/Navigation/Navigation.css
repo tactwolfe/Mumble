@@ -1,0 +1,64 @@
+.Nav-links {
+  grid-column: 1/-1;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  padding: 100px 50px;
+}
+
+.Nav-links__ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.Nav-links__li {
+  display: inline-block;
+  margin: 40px;
+}
+
+.Nav-links__a {
+  text-decoration: none;
+  color: black;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.3rem;
+}
+
+.Nav-links__a:hover {
+  color: orangered;
+}
+
+.Nav-links__login:link, .Nav-links__login:visited {
+  text-decoration: none;
+  background-color: #5C62E2;
+  padding: 1.5rem 2rem;
+  border-radius: 2rem;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.5rem;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.Nav-links__login:hover {
+  background-color: red;
+  -webkit-transform: translateY(-3px);
+          transform: translateY(-3px);
+  -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.8);
+          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.8);
+}
+
+.Nav-links__login:active {
+  -webkit-transform: translateY(-1px);
+          transform: translateY(-1px);
+  -webkit-box-shadow: 0 5 10px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 5 10px rgba(0, 0, 0, 0.3);
+}
+/*# sourceMappingURL=Navigation.css.map */

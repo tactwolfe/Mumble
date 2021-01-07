@@ -1,0 +1,22 @@
+.HomepageBlurredHolder {
+  background-color: #f1e8f7c5;
+  border-radius: 20px;
+  z-index: 10;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -ms-grid-rows: [nav-start] 100px [nav-end] (min-content)[3] 100px [footer-end];
+      grid-template-rows: [nav-start] 100px [nav-end] repeat(3, -webkit-min-content) 100px [footer-end];
+      grid-template-rows: [nav-start] 100px [nav-end] repeat(3, min-content) 100px [footer-end];
+  -webkit-column-gap: 20px;
+          column-gap: 20px;
+  row-gap: 150px;
+}
+/*# sourceMappingURL=HomepageBlurredHolder.css.map */
