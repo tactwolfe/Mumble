@@ -19,7 +19,7 @@
       align-self: start;
   -ms-grid-column-align: start;
       justify-self: start;
-  height: 600px;
+  height: 700px;
 }
 
 .about__description {
@@ -35,5 +35,6 @@
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
   padding: 3rem;
+  line-height: 3rem;
 }
 /*# sourceMappingURL=About.css.map */

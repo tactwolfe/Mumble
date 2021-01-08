@@ -6,13 +6,12 @@
 }
 
 .App {
-  background: fixed;
   background-repeat: repeat-y;
   font-family: "sans-serif";
   font-size: 16px;
   line-height: 1.7;
   background-color: black;
-  height: 100vh;
+  height: 100%;
   width: 100vw;
   display: -ms-grid;
   display: grid;

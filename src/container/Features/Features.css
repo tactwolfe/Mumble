@@ -1,0 +1,21 @@
+.feature-section {
+  -ms-grid-row: 4;
+  -ms-grid-row-span: 1;
+  grid-row: 4/5;
+  grid-column: 1/-1;
+  background-color: #5c62e2;
+  display: -ms-grid;
+  display: grid;
+  height: 700px;
+}
+
+.feature-section_img {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  height: 500px;
+  padding: 100px;
+}
+/*# sourceMappingURL=Features.css.map */

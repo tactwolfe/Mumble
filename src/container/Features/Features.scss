@@ -1,0 +1,27 @@
+.feature-section{
+    grid-row: 4/5;
+    grid-column: 1/-1;
+
+    background-color: rgb(92, 98, 226);
+
+    display:grid;
+    height: 900px;
+    // justify-content: center;
+    // align-content: center;
+    text-align: center;
+    &_img{
+        height: 500px;
+        padding: 100px; 
+        margin-bottom: 180px;
+        width: 50vw;
+  
+    }
+
+    &_details{
+        
+        font-size: 1.2rem;
+        font-family: 'Roboto', sans-serif;
+        
+
+    }
+}

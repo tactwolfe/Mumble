@@ -9,7 +9,7 @@ import headerIllustration from '../../assets/Images/header_illustration.svg';
 class Homepage extends Component {
     render() {
             return(
-               <div className="header" id="#home">
+               <div className="header" id="home">
                     <img className='logo' src={logo} alt="logo"></img>
                     <img className='headImage' src={headerIllustration} alt="illustration"></img>
                </div>

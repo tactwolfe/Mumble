@@ -11,7 +11,7 @@ class Navigation extends Component {
                 <nav>
                     <ul className="Nav-links__ul">
                         <li className="Nav-links__li"><a className="Nav-links__a" href="#home">Home</a></li>
-                        <li className="Nav-links__li"><a className="Nav-links__a" href="#home">About us</a></li>
+                        <li className="Nav-links__li"><a className="Nav-links__a" href="#about">About us</a></li>
                         <li className="Nav-links__li"><a className="Nav-links__a" href="#home">Features</a></li>
                         <li className="Nav-links__li"><a className="Nav-links__a" href="#home">Contact us</a></li>
                         <li className="Nav-links__li"><a className="Nav-links__login" href="/">Login</a></li>
