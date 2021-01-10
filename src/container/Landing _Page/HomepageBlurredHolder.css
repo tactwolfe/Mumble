@@ -12,11 +12,10 @@
   display: grid;
   -ms-grid-columns: (1fr)[2];
       grid-template-columns: repeat(2, 1fr);
-  -ms-grid-rows: [nav-start] 100px [nav-end] (min-content)[3] 100px [footer-end];
-      grid-template-rows: [nav-start] 100px [nav-end] repeat(3, -webkit-min-content) 100px [footer-end];
-      grid-template-rows: [nav-start] 100px [nav-end] repeat(3, min-content) 100px [footer-end];
+  -ms-grid-rows: [nav-start] 100px [nav-end] (min-content)[3] max-content [footer-end];
+      grid-template-rows: [nav-start] 100px [nav-end] repeat(3, -webkit-min-content) -webkit-max-content [footer-end];
+      grid-template-rows: [nav-start] 100px [nav-end] repeat(3, min-content) max-content [footer-end];
   -webkit-column-gap: 20px;
           column-gap: 20px;
-  row-gap: 150px;
 }
 /*# sourceMappingURL=HomepageBlurredHolder.css.map */

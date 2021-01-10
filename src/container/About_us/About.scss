@@ -5,6 +5,7 @@
     display: grid;
     grid-template-columns: repeat(2,1fr);
     gap: 20px;
+    padding-bottom: 150px;
 
     &__img{
         grid-column: 1/2;

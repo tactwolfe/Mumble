@@ -7,6 +7,7 @@
   display: grid;
   -ms-grid-columns: (minmax(500px, 1fr))[auto-fit];
       grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  padding: 150px 0;
 }
 
 .headImage {

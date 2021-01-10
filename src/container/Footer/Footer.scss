@@ -1,0 +1,106 @@
+.footer{
+    grid-row: 5/6;
+    grid-column: 1/-1;
+
+    display: grid;
+
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 3rem;
+    padding:150px 0 50px;
+    bottom: 150px;
+    &_info{
+        grid-column: 1/2;
+        text-align: center;
+        align-self: center;
+        font-size: 1rem;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    &_contact{
+        grid-column: 2/3;
+        width: 100%;
+        font-family: 'Roboto', sans-serif;
+        color: white;
+        justify-items: center;
+    }
+
+    &_heading{
+        margin-bottom: 2rem;
+        margin-left: 2rem;
+        font-size: 2rem;
+    }
+}
+.one{
+    color: red;
+}
+.two{
+    color: green;
+}
+.three{
+    color: blue;
+}
+
+.form{
+    &_group:not(:last-child){
+        margin-bottom: 2rem;
+    }
+    &_input{
+      font-size: 1.2rem;
+      padding: 1.5rem 2rem;
+      border-radius: 2px;
+      background-color: rgba($color: white, $alpha: 0.5);
+      border: none;
+      font-family: inherit;
+      border-bottom:  3px solid transparent;
+      width: 80%;
+      display: block;
+      color: inherit;
+
+      &::-webkit-input-placeholder{
+        color: rgb(92, 98, 226); 
+        }
+
+      &:focus{
+          outline: none;
+          border-bottom:  3px solid rgb(92, 98, 226);
+      }
+      &:focus:invalid{
+          border-bottom: 3px solid  orangered;
+      }
+      
+    }
+    
+    &_label{
+        font-size: 1.2rem;
+        font-weight: 400;
+        margin-left: 2rem;
+        margin-top: .7rem;
+        display: block;
+        transition: all .3s;
+    }
+
+    &_input:placeholder-shown + &_label{
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-4rem);
+    }
+
+    &_button{
+        background-color: rgb(92, 98, 226);
+        color: white;
+        padding: 1rem 1.5rem;
+        border: none;
+        border-radius: 20px;
+        transition: all .2s;
+
+        &:hover{
+            background-color: orangered;
+            transform: translateY(-3px);
+        }
+        &:active{
+            background-color: green;
+            color: black;
+            transform: translateY(-1px);
+        }
+    }
+}

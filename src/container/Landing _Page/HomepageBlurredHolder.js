@@ -7,6 +7,7 @@ import Homepage from './Homepage';
 import Navigation from "../Navigation/Navigation";
 import About from '../About_us/About';
 import Features from "../Features/Features";
+import Footer from "../Footer/Footer";
 
 
 const blurredHolder = (props) => {
@@ -16,6 +17,7 @@ const blurredHolder = (props) => {
             <Homepage/>
             <About/>
             <Features/>
+            <Footer/>
         </div>
     );
 }

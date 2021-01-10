@@ -6,16 +6,19 @@
   background-color: #5c62e2;
   display: -ms-grid;
   display: grid;
-  height: 700px;
+  height: 900px;
+  text-align: center;
 }
 
 .feature-section_img {
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  -ms-grid-column-align: center;
-      justify-self: center;
   height: 500px;
   padding: 100px;
+  margin-bottom: 180px;
+  width: 50vw;
+}
+
+.feature-section_details {
+  font-size: 1.2rem;
+  font-family: 'Roboto', sans-serif;
 }
 /*# sourceMappingURL=Features.css.map */
