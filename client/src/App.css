@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.App {
+  background-repeat: repeat-y;
+  font-family: "sans-serif";
+  font-size: 16px;
+  line-height: 1.7;
+  background-color: black;
+  height: 100%;
+  width: 100vw;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 100px 1fr 100px;
+      grid-template-columns: 100px 1fr 100px;
+  -ms-grid-rows: 100px 1fr;
+      grid-template-rows: 100px 1fr;
+  z-index: 1;
+}
+/*# sourceMappingURL=App.css.map */

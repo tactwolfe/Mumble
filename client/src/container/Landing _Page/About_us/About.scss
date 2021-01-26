@@ -1,0 +1,30 @@
+.about{
+    grid-row: 3/4;
+    grid-column: 1/-1;
+
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+    padding-bottom: 150px;
+
+    &__img{
+        grid-column: 1/2;
+        align-self: start;
+        justify-self: start;
+        height: 43.75rem;
+        width: 90%;
+     
+        
+    }
+
+    &__description{
+        grid-column: 2/3;
+        align-self: center;
+        justify-self: center;
+        font-size: 1.2rem;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 500;
+        padding: 3rem;
+        line-height: 3rem;
+    }
+}

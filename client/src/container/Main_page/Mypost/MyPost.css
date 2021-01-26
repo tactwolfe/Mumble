@@ -1,0 +1,106 @@
+.my-post {
+  grid-row: 1/-1;
+  grid-column: 1/-1;
+  height: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 25vw 1fr;
+      grid-template-columns: 25vw 1fr;
+  text-align: center;
+}
+
+.my-post_navigation {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  background-color: rgba(92, 99, 226, 0.89);
+  position: fixed;
+  height: 100%;
+  width: 25vw;
+}
+
+.my-post_nav_logo {
+  width: 8rem;
+  height: 6rem;
+  -ms-grid-column-align: start;
+      justify-self: start;
+  margin: 2rem auto .5rem;
+}
+
+.my-post_nav_name {
+  color: white;
+  font-weight: bold;
+  font-size: 3rem;
+  font-family: 'Roboto',sans-serif;
+  margin-bottom: 5rem;
+}
+
+.my-post_nav_name:hover {
+  color: orangered;
+}
+
+.my-post_nav_links {
+  list-style: none;
+  text-align: start;
+}
+
+.my-post_nav_links:not(:last-child) {
+  margin-bottom: 3rem;
+}
+
+.my-post_nav_link {
+  text-decoration: none;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin-top: .7rem;
+  display: block;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  font-family: 'Roboto', sans-serif;
+  color: white;
+}
+
+.my-post_nav_link:hover {
+  -webkit-transform: translateY(-3px);
+          transform: translateY(-3px);
+  font-size: 1.5rem;
+  color: white;
+}
+
+.my-post_postholder {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  display: -ms-grid;
+  display: grid;
+  row-gap: 1rem;
+  -ms-grid-rows: (minmax(15rem, min-content))[auto-fit];
+      grid-template-rows: repeat(auto-fit, minmax(15rem, -webkit-min-content));
+      grid-template-rows: repeat(auto-fit, minmax(15rem, min-content));
+  height: 100%;
+  grid-auto-rows: minmax(15rem, -webkit-min-content);
+  grid-auto-rows: minmax(15rem, min-content);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.logout {
+  margin-top: 5rem;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.logout:hover {
+  -webkit-transform: scale(3);
+          transform: scale(3);
+}
+
+.background_img {
+  z-index: 1;
+  position: fixed;
+  right: 25%;
+  top: 25%;
+  height: 65vh;
+}
+/*# sourceMappingURL=MyPost.css.map */

@@ -1,0 +1,97 @@
+.chat-room {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 3;
+  grid-row: 1/span 3;
+  grid-column: 1/-1;
+  background-color: rgba(235, 201, 230, 0.719);
+  border-radius: 30px;
+  margin: 1rem 1.5rem 0;
+  padding: 5rem;
+  text-align: start;
+  z-index: 2;
+  height: 95vh;
+}
+
+.chat-room_input-box {
+  margin-bottom: 4rem;
+}
+
+.chat-room_input {
+  padding: 1.5rem 2rem;
+  border-radius: 3px;
+  width: 80%;
+  border: none;
+  font-size: 1.2rem;
+  font-family: 'Roboto', sans-serif;
+  border-bottom: 3px solid transparent;
+  width: 80%;
+  display: block;
+  color: inherit;
+  background-color: #e2d4d4;
+}
+
+.chat-room_input::-webkit-input-placeholder {
+  color: #5c62e2;
+}
+
+.chat-room_input:focus {
+  outline: none;
+  border-bottom: 3px solid #5c62e2;
+}
+
+.chat-room_input:placeholder-shown + .chat-room_label {
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transform: translateY(-4rem);
+          transform: translateY(-4rem);
+}
+
+.chat-room_label {
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin-left: 2rem;
+  margin-top: .7rem;
+  display: block;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  font-family: 'Roboto', sans-serif;
+  color: black;
+}
+
+.chat-room_button {
+  background-color: #5c62e2;
+  color: white;
+  padding: 1rem 1.5rem;
+  border: none;
+  border-radius: 20px;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  font-family: 'Roboto', sans-serif;
+  margin-bottom: 2rem;
+}
+
+.chat-room_button:hover {
+  background-color: orangered;
+  -webkit-transform: translateY(-3px);
+          transform: translateY(-3px);
+}
+
+.chat-room_button:active {
+  background-color: green;
+  color: black;
+  -webkit-transform: translateY(-1px);
+          transform: translateY(-1px);
+}
+
+.chat-room_instruction {
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.chat-room_instructions-items {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+/*# sourceMappingURL=ChatRoomSelector.css.map */

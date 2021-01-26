@@ -1,0 +1,145 @@
+.registration{
+
+    grid-row: 1/-1;
+    grid-column: 1/-1;
+
+    display: grid;
+    grid-template-columns: repeat(2,1r);
+    grid-template-rows: 12.5rem 1fr;
+    gap: 1.25rem;
+    height: 100%;
+    width: 100%;
+    background-color: white;
+
+    &_img{
+        grid-column: 1/2;
+        grid-row: 2/3;
+        height: 72.5vh;
+        width: 50vw;
+    }
+    &_box{
+        grid-column: 2/3;
+        grid-row: 2/3;
+        padding: 2rem;
+    }
+    &_logo{
+        grid-column: 1/-1;
+        grid-row: 1/2;
+        height: 6rem;
+        justify-self: start;
+        margin: 2rem;
+    }
+    &_heading{
+        font-size: 2.2rem;
+        font-family: 'Roboto', sans-serif;
+        font-weight: bold;
+        color:rgb(92, 98, 226);
+        margin-bottom: 2rem;
+    }
+    &_sub_heading{
+        font-size: 1.2rem;
+        font-family: 'Roboto', sans-serif;
+        color:rgb(92, 98, 226);
+        margin-top: 1rem;
+        margin-bottom: 5rem;
+    }
+
+    &_para{
+        font-size: 1.2rem;
+        font-family: 'Roboto', sans-serif;
+        color:rgb(92, 98, 226);
+        margin-top: 1rem;
+    }
+    &_page_register{
+                text-decoration: none;
+                margin-left: .5rem;
+                color: red;
+        
+                &:hover{
+                    color: green;
+                }
+    }
+
+    &_form{
+
+        &_container:not(:last-child){
+            margin-bottom: 2rem;
+        }
+        &_input{ 
+            padding: 1.5rem 2rem;
+            border-radius: 3px;
+            width: 80%;
+            border: none;
+            font-size: 1.2rem;
+            font-family: 'Roboto', sans-serif;
+            border-bottom:  3px solid transparent;
+            width: 80%;
+            display: block;
+            color: inherit;
+            background-color: rgb(226, 212, 212);
+
+            &::-webkit-input-placeholder{
+                color: rgb(92, 98, 226); 
+                }
+        
+            &:focus{
+                outline: none;
+                border-bottom:  3px solid rgb(92, 98, 226);
+            }
+            &:focus:invalid{
+                border-bottom: 3px solid  orangered;
+            }
+        }
+        &_input:placeholder-shown + &_label{
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(-4rem);
+        }
+        &_label{
+            font-size: 1.2rem;
+            font-weight: 400;
+            margin-left: 2rem;
+            margin-top: .7rem;
+            display: block;
+            transition: all .3s;
+            font-family: 'Roboto', sans-serif;
+            color: black;
+        }
+        &_button{
+            background-color: rgb(92, 98, 226);
+            color: white;
+            padding: 1rem 1.5rem;
+            border: none;
+            border-radius: 20px;
+            transition: all .2s;
+            font-family: 'Roboto', sans-serif;
+
+            &:hover{
+                background-color: orangered;
+                transform: translateY(-3px);
+            }
+            &:active{
+                background-color: green;
+                color: black;
+                transform: translateY(-1px);
+            }
+            
+        }
+    }
+}
+
+
+// .auth{
+
+
+//     &_page_register{
+//         text-decoration: none;
+//         margin-left: .5rem;
+//         color: red;
+
+//         &:hover{
+//             color: green;
+//         }
+//     }
+
+// }
