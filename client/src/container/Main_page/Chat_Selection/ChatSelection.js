@@ -1,6 +1,7 @@
-import React , {Component} from 'react';
-import {NavLink} from 'react-router-dom';
+import React , {useState} from 'react';
+import {NavLink , useHistory} from 'react-router-dom';
 // import axios from 'axios';
+import { useAuth } from '../../Authentication/AuthProvider';
 
 import './ChatSelection.css';
 
@@ -10,14 +11,27 @@ import BackIllustration from '../../../assets/Images/backIllustration.svg';
 
 import ChatRoomSelector from '../../../component/Chatroomselector/ChatRoomSelector';
 
-class ChatSelection extends Component {
+const ChatSelection =()=>{
 
-    // componentDidMount() {
-    //     // axios.get()
-    //     // axios.get()
-    // }
+    const { logout , currentUser } = useAuth();
+    const history = useHistory();
+    const [error , setError] = useState('');
 
-    render(){
+
+    async function handleLogout() {
+        setError('')
+        
+        try {
+            await logout()
+            history.push('/login')
+            
+        } catch (error) {
+            setError (error)
+            console.log(error);
+        }
+    }
+
+
 
         return(
             <div className="chat-selection">
@@ -33,7 +47,7 @@ class ChatSelection extends Component {
                             <li className="chat-selection_nav_links"><NavLink to="/new-post"  className="chat-selection_nav_link">Post Something</NavLink></li>
                             <li className="chat-selection_nav_links"><NavLink to="/chat-selection"  className="chat-selection_nav_link">Chat Rooms</NavLink></li>
                         </ul>
-                        <NavLink to="/logout" exact><img src={Logout} alt="logout" className="logout" /></NavLink>
+                        <NavLink onClick={handleLogout} to="/login" exact><img src={Logout} alt="logout" className="logout" /></NavLink>
                     </nav>
                 </header>
                 <div className="chat-selection_postholder">
@@ -42,7 +56,7 @@ class ChatSelection extends Component {
                 </div>
             </div>
         );
-    }
+    
 }
 
 export default ChatSelection;

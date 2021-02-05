@@ -1,6 +1,9 @@
-import React , {Component} from 'react';
-import {NavLink} from 'react-router-dom';
-import axios from 'axios';
+import React , {useState}  from 'react';
+import {NavLink , useHistory} from 'react-router-dom';
+
+
+import { useAuth } from '../../Authentication/AuthProvider';
+
 
 import './NewpostContainer.css';
 
@@ -10,15 +13,24 @@ import BackIllustration from '../../../assets/Images/backIllustration.svg';
 
 import NewPost from '../../../component/NewPost/NewPost';
 
-class NewPostContainer extends Component {
+const NewPostContainer = ()=> {
 
-    // componentDidMount() {
-    //     // axios.get()
-    //     // axios.get()
-    // }
+    const { logout , currentUser } = useAuth();
+    const history = useHistory();
+    const [error , setError] = useState('');
 
-    render(){
-
+    async function handleLogout() {
+        setError('')
+        
+        try {
+            await logout()
+            history.push('/login')
+            
+        } catch (error) {
+            setError (error)
+            console.log(error);
+        }
+    }
         return(
             <div className="new-post">
                 <header className="new-post_navigation">
@@ -33,7 +45,7 @@ class NewPostContainer extends Component {
                             <li className="new-post_nav_links"><NavLink to="/new-post"  className="new-post_nav_link">Post Something</NavLink></li>
                             <li className="new-post_nav_links"><NavLink to="/chat-selection"  className="new-post_nav_link">Chat Rooms</NavLink></li>
                         </ul>
-                        <NavLink to="/logout" exact><img src={Logout} alt="logout" className="logout" /></NavLink>
+                        <NavLink onClick={handleLogout} to="/logout" exact><img src={Logout} alt="logout" className="logout" /></NavLink>
                     </nav>
                 </header>
                 <div className="new-post_postholder">
@@ -42,7 +54,6 @@ class NewPostContainer extends Component {
                 </div>
             </div>
         );
-    }
 }
 
 export default NewPostContainer;

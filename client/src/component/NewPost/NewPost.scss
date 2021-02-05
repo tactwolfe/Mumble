@@ -39,6 +39,20 @@
                 outline: none;
             }
         }
+
+        &_fileupload{
+            align-self: center;
+            margin-right: 2rem;
+            margin-top: 2rem;
+            background-color: rgb(14, 110, 57);
+            color: white;
+            padding: 1rem 1.5rem;
+            border: none;
+            border-radius: 20px;
+            font-family: 'Roboto', sans-serif;
+            cursor: pointer; 
+        }
+
         &_button{
             margin-top: 2rem;
             background-color: rgb(92, 98, 226);

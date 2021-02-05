@@ -3,6 +3,7 @@
   border-radius: 30px;
   margin: 1rem 1.5rem 0;
   z-index: 2;
+  overflow: hidden;
 }
 
 .post_para {
@@ -10,5 +11,16 @@
   font-size: 1.2rem;
   font-weight: 400;
   padding: 3rem;
+  text-align: justify;
+  font-weight: 600;
+}
+
+.post_img {
+  height: 50vh;
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin-top: 4rem;
+  border-radius: 20px;
 }
 /*# sourceMappingURL=Post.css.map */

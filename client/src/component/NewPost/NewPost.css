@@ -43,6 +43,21 @@
   outline: none;
 }
 
+.new_post_form_fileupload {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-right: 2rem;
+  margin-top: 2rem;
+  background-color: #0e6e39;
+  color: white;
+  padding: 1rem 1.5rem;
+  border: none;
+  border-radius: 20px;
+  font-family: 'Roboto', sans-serif;
+  cursor: pointer;
+}
+
 .new_post_form_button {
   margin-top: 2rem;
   background-color: #5c62e2;

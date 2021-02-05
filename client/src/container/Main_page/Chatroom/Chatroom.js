@@ -8,8 +8,6 @@ import Logo from '../../../assets/Images/logo.png';
 import Logout from '../../../assets/Images/logout.svg';
 import BackIllustration from '../../../assets/Images/backIllustration.svg';
 
-import ChatRoomSelector from '../../../component/Chatroomselector/ChatRoomSelector';
-
 class ChatRoom extends Component {
 
     // componentDidMount() {
@@ -38,7 +36,7 @@ class ChatRoom extends Component {
                 </header>
                 <div className="chatroom_postholder">
                     <img alt='back-img' src={BackIllustration} className="background_img"/>
-                    {/* <ChatRoomSelector/> */}
+                    
                 </div>
             </div>
         );
