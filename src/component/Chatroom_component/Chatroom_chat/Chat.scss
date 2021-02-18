@@ -1,0 +1,91 @@
+.chat{
+    flex: 0.65;
+    display: flex;
+    flex-direction: column;
+   
+    &_header{
+        padding: 2rem 2rem 1.15rem;
+        display: flex;
+        align-items: center;
+        border-bottom: 1px solid lightgrey;
+        &Info{
+            flex: 1;
+            padding-left: 1.25rem;
+            font-family: 'Roboto', sans-serif; 
+
+            & > h3{
+                font-weight: 500;
+                margin-bottom: 3px;
+            }
+
+            & > p{
+                color: rgb(255, 253, 253);
+            }
+
+            &-roomname{
+                color: white;
+            }
+        }
+        &emote{
+            color: white;
+            font-size: 1.5rem;
+        }
+    }
+    &_body{
+        flex: 1;
+        // background-image: url('https://user-images.githubusercontent.com/15075759/28719144-86dc0f70-73b1-11e7-911d-60d70fcded21.png');
+        background-repeat: repeat;
+        padding: 1.9rem;
+        overflow: scroll;
+        overflow-x: hidden;
+    }
+    
+    &_footer{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 4rem;
+        border-top: 1px solid lightgrey;
+
+        & > form{
+            flex: 1;
+            display: flex;
+
+            & > input {
+                flex: .96;
+                border-radius: 2rem;
+                border: none;
+                padding: .5rem;
+            }
+
+            & > button{
+                border-radius: 50%;
+                border: none;
+                flex: .04;
+                margin: 0 1rem;
+                background-color: transparent;
+            }
+        }
+
+        & > .MuiSvgIcon-root{
+            color: white;
+            margin: 10px;
+        }
+
+        &-input{
+
+            margin-left: 1rem;
+            font-family: 'Roboto', sans-serif;
+            font-size: .9rem;
+            padding: 1rem;
+
+            &:focus{
+            outline: none;
+            }
+
+            &::placeholder{
+                color: black;
+            }
+        }
+    }
+}

@@ -1,0 +1,32 @@
+.new-post{
+    grid-row: 1/-1;
+    grid-column: 1/-1;
+    height: 100%;
+    
+    display: grid;
+    grid-template-columns: 25vw 1fr;
+    text-align: center;
+
+    &_postholder{
+        grid-column: 2/3;
+        display: grid;
+        row-gap: 1rem;
+        grid-template-rows: repeat(auto-fit , 15rem);
+        height: 100%;
+        grid-auto-rows: 15rem;
+        box-sizing: border-box;
+        
+    }
+   
+    
+}
+
+.background_img{
+    z-index: 1;
+    position: fixed;
+    right: 25%;
+    top: 25%;
+    height: 65vh;
+}
+
+

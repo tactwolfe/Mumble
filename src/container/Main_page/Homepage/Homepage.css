@@ -1,0 +1,36 @@
+.home {
+  grid-row: 1/-1;
+  grid-column: 1/-1;
+  height: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 25vw 1fr;
+      grid-template-columns: 25vw 1fr;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+  background-image: url("https://i.pinimg.com/originals/44/eb/c3/44ebc3095a5deba2973f0e5fd3fb92b5.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  overflow-x: hidden;
+}
+
+.home_postholder {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  display: -ms-grid;
+  display: grid;
+  row-gap: 1rem;
+  -ms-grid-rows: (minmax(15rem, min-content))[auto-fit];
+      grid-template-rows: repeat(auto-fit, minmax(15rem, -webkit-min-content));
+      grid-template-rows: repeat(auto-fit, minmax(15rem, min-content));
+  height: 100%;
+  grid-auto-rows: minmax(15rem, -webkit-min-content);
+  grid-auto-rows: minmax(15rem, min-content);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  min-height: 100vh;
+}
+/*# sourceMappingURL=Homepage.css.map */

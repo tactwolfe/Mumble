@@ -1,0 +1,133 @@
+.chat {
+  -webkit-box-flex: 0.65;
+      -ms-flex: 0.65;
+          flex: 0.65;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.chat_header {
+  padding: 2rem 2rem 1.15rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 1px solid lightgrey;
+}
+
+.chat_headerInfo {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding-left: 1.25rem;
+  font-family: 'Roboto', sans-serif;
+}
+
+.chat_headerInfo > h3 {
+  font-weight: 500;
+  margin-bottom: 3px;
+}
+
+.chat_headerInfo > p {
+  color: #fffdfd;
+}
+
+.chat_headerInfo-roomname {
+  color: white;
+}
+
+.chat_headeremote {
+  color: white;
+  font-size: 1.5rem;
+}
+
+.chat_body {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  background-repeat: repeat;
+  padding: 1.9rem;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+.chat_footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 4rem;
+  border-top: 1px solid lightgrey;
+}
+
+.chat_footer > form {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.chat_footer > form > input {
+  -webkit-box-flex: .96;
+      -ms-flex: .96;
+          flex: .96;
+  border-radius: 2rem;
+  border: none;
+  padding: .5rem;
+}
+
+.chat_footer > form > button {
+  border-radius: 50%;
+  border: none;
+  -webkit-box-flex: .04;
+      -ms-flex: .04;
+          flex: .04;
+  margin: 0 1rem;
+  background-color: transparent;
+}
+
+.chat_footer > .MuiSvgIcon-root {
+  color: white;
+  margin: 10px;
+}
+
+.chat_footer-input {
+  margin-left: 1rem;
+  font-family: 'Roboto', sans-serif;
+  font-size: .9rem;
+  padding: 1rem;
+}
+
+.chat_footer-input:focus {
+  outline: none;
+}
+
+.chat_footer-input::-webkit-input-placeholder {
+  color: black;
+}
+
+.chat_footer-input:-ms-input-placeholder {
+  color: black;
+}
+
+.chat_footer-input::-ms-input-placeholder {
+  color: black;
+}
+
+.chat_footer-input::placeholder {
+  color: black;
+}
+/*# sourceMappingURL=Chat.css.map */

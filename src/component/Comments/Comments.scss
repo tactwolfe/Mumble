@@ -1,0 +1,18 @@
+.comment{
+    display: flex;
+    text-align: justify;
+
+    &_username{
+        font-family: 'Roboto', sans-serif;
+        // font-size: .9rem;
+        font-weight: bold;
+        margin-right: .5rem;
+        padding: .5rem ;
+    }
+    &_usercomment{
+        font-family: 'Roboto', sans-serif;
+        // font-size: .9rem;
+        // padding: .5rem  1rem;
+        padding: .5rem ;
+    }
+}

@@ -1,0 +1,198 @@
+.sidebar {
+  -webkit-box-flex: 0.35;
+      -ms-flex: 0.35;
+          flex: 0.35;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.sidebar_header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 1.25rem;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.sidebar_logo {
+  width: 8rem;
+  height: 6rem;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+.sidebar_para {
+  font-family: 'Monoton', cursive;
+  margin-left: 2rem;
+  margin-top: 2rem;
+  color: white;
+}
+
+.sidebar_addRooms {
+  background-color: black;
+  min-height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  padding-top: 2rem;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+.sidebar_addRooms-text {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.5rem;
+  color: white;
+}
+
+.sidebar_addRooms-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 1rem;
+  padding: 1rem 10rem;
+}
+
+.sidebar_addRooms-form-input {
+  border-radius: 20px;
+  border: none;
+  margin-bottom: 1rem;
+  padding: .5rem 1rem;
+  font-family: 'Roboto', sans-serif;
+  font-size: .9rem;
+}
+
+.sidebar_addRooms-form-input:focus {
+  outline: none;
+}
+
+.sidebar_addRooms-form-input::-webkit-input-placeholder {
+  font-family: 'Roboto', sans-serif;
+  font-size: .9rem;
+  color: black;
+}
+
+.sidebar_addRooms-form-input:-ms-input-placeholder {
+  font-family: 'Roboto', sans-serif;
+  font-size: .9rem;
+  color: black;
+}
+
+.sidebar_addRooms-form-input::-ms-input-placeholder {
+  font-family: 'Roboto', sans-serif;
+  font-size: .9rem;
+  color: black;
+}
+
+.sidebar_addRooms-form-input::placeholder {
+  font-family: 'Roboto', sans-serif;
+  font-size: .9rem;
+  color: black;
+}
+
+.sidebar_addRooms-form-button {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
+  border: none;
+  border-radius: 20px;
+  padding: .5rem;
+  font-family: 'Roboto', sans-serif;
+  font-size: .9rem;
+  color: white;
+  background-color: red;
+  cursor: pointer;
+}
+
+.sidebar_addRooms-form-button:hover {
+  -webkit-transform: translateY(-3px);
+          transform: translateY(-3px);
+  background-color: green;
+}
+
+.sidebar_addRooms-form-button:active {
+  -webkit-transform: translateY(-1px);
+          transform: translateY(-1px);
+  background-color: skyblue;
+}
+
+.sidebar_addRooms-form-button:focus {
+  outline: none;
+}
+
+.sidebar_search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #f6f6f6;
+  height: 2rem;
+  padding: 2rem 1rem;
+}
+
+.sidebar_searchContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: white;
+  width: 100%;
+  height: 2rem;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.sidebar_searchContainer > input {
+  border: none;
+  margin-left: 1rem;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.sidebar_searchContainer > input:focus {
+  outline: none;
+}
+
+.sidebar_searchContainer > .MuiSvgIcon-root {
+  color: gray;
+  margin: 10px;
+}
+
+.sidebar_chat {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  background-color: white;
+  overflow: scroll;
+}
+/*# sourceMappingURL=Sidebar.css.map */

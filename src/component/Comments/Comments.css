@@ -1,0 +1,19 @@
+.comment {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: justify;
+}
+
+.comment_username {
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  margin-right: .5rem;
+  padding: .5rem;
+}
+
+.comment_usercomment {
+  font-family: 'Roboto', sans-serif;
+  padding: .5rem;
+}
+/*# sourceMappingURL=Comments.css.map */

@@ -1,0 +1,29 @@
+.chatroom_welcome{
+    flex: 0.65;
+    display: flex;
+    flex-direction: column;
+
+    &-box{
+        display: grid;
+        place-items: center;
+        min-height: 100%;
+        text-align: center;
+    }
+    &-heading{
+        color: white;
+        font-family: 'Amaranth', sans-serif;
+        margin-bottom: 2rem;
+    }
+    &-subheading{
+        color: white;
+        // font-family: 'Amaranth', sans-serif;
+        font-family: 'Roboto', sans-serif; 
+    }
+}
+
+.logo{
+    width: 13rem;
+    height: 10rem;
+    justify-self: start;
+    margin: 2rem auto .5rem;
+}

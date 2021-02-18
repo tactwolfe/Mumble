@@ -1,0 +1,34 @@
+.new-post {
+  grid-row: 1/-1;
+  grid-column: 1/-1;
+  height: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 25vw 1fr;
+      grid-template-columns: 25vw 1fr;
+  text-align: center;
+}
+
+.new-post_postholder {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  display: -ms-grid;
+  display: grid;
+  row-gap: 1rem;
+  -ms-grid-rows: (15rem)[auto-fit];
+      grid-template-rows: repeat(auto-fit, 15rem);
+  height: 100%;
+  grid-auto-rows: 15rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.background_img {
+  z-index: 1;
+  position: fixed;
+  right: 25%;
+  top: 25%;
+  height: 65vh;
+}
+/*# sourceMappingURL=NewpostContainer.css.map */

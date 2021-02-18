@@ -1,0 +1,143 @@
+.sidebar{
+
+    flex: 0.35;
+    display: flex;
+    flex-direction: column;
+
+    &_header{
+        display: flex;
+        flex-direction: row;
+        padding: 1.25rem;
+        // border-right: 1px solid lightgrey;
+        align-content: center;
+        justify-content: center;
+       
+    }
+    &_logo{
+        width: 8rem;
+        height: 6rem;
+        justify-self: center;
+    }
+    &_para{
+        font-family: 'Monoton', cursive;
+        margin-left: 2rem;
+        margin-top: 2rem;
+        color: white;
+    }
+
+    &_addRooms{
+        background-color: black;
+        min-height: 100px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-top: 2rem;
+        border: 1px solid black;
+        cursor: pointer;
+
+        &-text{
+            font-family: 'Roboto', sans-serif;
+            font-size: 1.5rem;
+            color: white;
+        }
+        &-form{
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 1rem;
+            padding: 1rem 10rem;
+
+            &-input{
+                border-radius: 20px;
+                border: none;
+                margin-bottom: 1rem;
+                padding: .5rem 1rem;
+                font-family: 'Roboto', sans-serif;
+                font-size: .9rem;
+
+                &:focus{
+                    outline: none;
+                }
+                &::placeholder{
+                    font-family: 'Roboto', sans-serif;
+                    font-size: .9rem;
+                    color: black;
+                }
+            }
+
+            &-button{
+                align-self: center;
+                max-width: max-content;
+                border: none;
+                border-radius: 20px;
+                padding: .5rem;
+                font-family: 'Roboto', sans-serif;
+                font-size: .9rem;
+                color: white;
+                background-color: red;
+                cursor: pointer;
+
+                &:hover{
+                    transform: translateY(-3px);
+                    background-color: green;
+                }
+                &:active{
+                    transform: translateY(-1px);
+                    background-color: skyblue;
+                }
+                &:focus{
+                    outline: none;
+                }
+            }
+        }
+    }
+    &_search{
+        display: flex;
+        align-items: center;
+        background-color: #f6f6f6;
+        // background-color:  #eee4e4fb;
+        height: 2rem;
+        padding: 2rem 1rem;
+
+            // & > input {
+            //     flex: 1;
+            //     border-radius: 30px;
+            //     border: none;
+
+            //     &:focus{
+            //         outline: none;
+            //     }
+            // }
+    }
+
+    &_searchContainer{
+        display: flex;
+        align-items: center;
+        background-color: white;
+        width: 100%;
+        height: 2rem;
+        border-radius: 20px;
+        overflow: hidden;
+
+        & > input{
+            border: none;
+            margin-left: 1rem;
+            flex: 1;
+
+            &:focus{
+                outline: none;
+            }
+        }
+
+        & > .MuiSvgIcon-root{
+            color: gray;
+            margin: 10px;
+        }
+    }
+    &_chat{
+        flex: 1;
+        background-color: white;
+        overflow: scroll;
+    }
+}
+
+

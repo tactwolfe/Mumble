@@ -1,0 +1,72 @@
+
+.side{
+    &_navigation{
+        grid-column: 1/2 ;
+        // background-color: rgba(92, 99, 226, 0.89);
+        background-color: black;
+        position: fixed;
+        height: 100%;
+        width: 25vw;
+        
+    }
+    
+    &_nav{
+    
+        &_logo{
+            width: 8rem;
+            height: 6rem;
+            justify-self: start;
+            margin: 2rem auto .5rem;
+        }
+    
+        &_name{
+            color:  white;
+            // font-weight: bold;
+            font-size: 3rem;
+            font-family: 'Monoton', cursive;
+            margin-bottom: 5rem;
+    
+            &:hover{
+                color: orangered; 
+            }
+        }
+    
+        &_links{
+            list-style: none;
+            text-align: start;
+            
+            &:not(:last-child){
+                margin-bottom: 3rem;
+            }
+           
+        }
+        &_link{
+            text-decoration: none;
+            color: white;
+            font-size: 1.2rem;
+            font-weight: 400;
+            margin-top: .7rem;
+            display: block;
+            transition: all .3s;
+            font-family: 'Roboto', sans-serif;
+            color: white;
+    
+            &:hover{
+                transform: translateY(-3px);
+                font-size: 1.5rem;
+                color: white;
+            } 
+        }
+    }
+}
+
+.logout{
+        margin-top: 5rem;
+        transition: all .3s;
+    
+        &:hover{
+            transform: scale(3);
+        }
+        
+}
+
