@@ -37,17 +37,17 @@ const features = ()=> {
                     <img className="feature-section_img" src={Chatting} alt="Third slide"/>
                     <Carousel.Caption className="feature-section_details">
                         <h3>Chatting</h3>
-                        <p>Interact 1 on 1 with other user of MUMBLE randomly or better talk with everyone in our global chat section.</p>
+                        <p>Interact 1 on 1 with other user of MUMBLE randomly or better talk with everyone in our Group chat section.</p>
                     </Carousel.Caption>
                 </Carousel.Item>
 
-                <Carousel.Item>
+                {/* <Carousel.Item>
                     <img className="feature-section_img" src={Expert} alt="fourth SLide"/>
                     <Carousel.Caption className="feature-section_details">
                         <h3>Expert</h3>
                         <p>we have a panel of experts who always goes though your post and give their own take on how to handle situation you are going through.</p>
                     </Carousel.Caption>
-                </Carousel.Item>
+                </Carousel.Item> */}
 
             </Carousel>
         </Aux>
