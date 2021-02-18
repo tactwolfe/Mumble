@@ -35,11 +35,8 @@ class App extends Component {
             <PrivateRoute exact path="/homepage" component={Homepage}/>
             <PrivateRoute path="/my-post" exact component={MyPost}/>
             <PrivateRoute path="/new-post" exact component={NewPost}/>
-            <Route path="/chat-selection" exact component={ChatSelection}/>
             <Route path="/chatroom"  component={ChatRoom}/>
-          
-            {/* <Route path='/random-chat' component={RandomChat}/>
-            <Route path='/randomchat' component={Random}/> */}
+
      
         </div>
        </AuthProvider>

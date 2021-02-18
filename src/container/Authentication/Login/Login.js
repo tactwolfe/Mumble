@@ -43,7 +43,7 @@ const Login = ()=> {
                 <div className="authentication_box">
                     <p className="auth_heading">Welcome Back :)</p>
                     { error ? <p className='error' >{error}</p> : null}
-                    {currentUser && currentUser.email}
+                    {/* {currentUser && currentUser.email} */}
                     <form className="auth_form" onSubmit={submitHandler}>
                         <div className="auth_form_container">
                             <input 

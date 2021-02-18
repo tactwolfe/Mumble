@@ -50,7 +50,7 @@ const Register = (props) => {
                         <h3 className="registration_heading">Oh hi! we are so glad that you want to join our community :)</h3>
                         <p className="registration_sub_heading">but before we log you in we need some information from you so please fill the form below</p>
                         { error ? <p className='error' >{error}</p> : null}
-                        {currentUser && currentUser.email}
+                        {/* {currentUser && currentUser.email} */}
                         <form className="registration_form" onSubmit={submitHandler}>
                             <div className="registration_form_container">
                                     <input 
