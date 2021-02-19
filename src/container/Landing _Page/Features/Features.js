@@ -41,13 +41,6 @@ const features = ()=> {
                     </Carousel.Caption>
                 </Carousel.Item>
 
-                {/* <Carousel.Item>
-                    <img className="feature-section_img" src={Expert} alt="fourth SLide"/>
-                    <Carousel.Caption className="feature-section_details">
-                        <h3>Expert</h3>
-                        <p>we have a panel of experts who always goes though your post and give their own take on how to handle situation you are going through.</p>
-                    </Carousel.Caption>
-                </Carousel.Item> */}
 
             </Carousel>
         </Aux>

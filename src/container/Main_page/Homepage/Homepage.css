@@ -33,4 +33,12 @@
           box-sizing: border-box;
   min-height: 100vh;
 }
+
+.home_empty {
+  font-size: 2rem;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  margin: .7rem;
+  color: white;
+}
 /*# sourceMappingURL=Homepage.css.map */

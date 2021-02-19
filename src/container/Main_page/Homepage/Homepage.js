@@ -34,7 +34,7 @@ const HomePage = ()=> {
                 <div className="home">
                     <SideNavigation/>
                     <div className="home_postholder">
-                        {!posts ? null : fetchposts}  
+                        {posts.length === 0 ? <p className='home_empty'>No user have posted anything yet</p> : fetchposts}  
                     </div>
                 </div>
         );
